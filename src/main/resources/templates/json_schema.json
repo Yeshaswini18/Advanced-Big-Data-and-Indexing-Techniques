@@ -1,0 +1,299 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1602179733.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "planCostShares",
+    "linkedPlanServices",
+    "_org",
+    "objectId",
+    "objectType",
+    "planType",
+    "creationDate"
+  ],
+  "properties": {
+    "planCostShares": {
+      "$id": "#root/planCostShares",
+      "title": "Plancostshares",
+      "type": "object",
+      "required": [
+        "deductible",
+        "_org",
+        "copay",
+        "objectId",
+        "objectType"
+      ],
+      "properties": {
+        "deductible": {
+          "$id": "#root/planCostShares/deductible",
+          "title": "Deductible",
+          "type": "integer",
+          "examples": [
+            2000
+          ],
+          "default": 0
+        },
+        "_org": {
+          "$id": "#root/planCostShares/_org",
+          "title": "_org",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "example.com"
+          ],
+          "pattern": "^.*$"
+        },
+        "copay": {
+          "$id": "#root/planCostShares/copay",
+          "title": "Copay",
+          "type": "integer",
+          "examples": [
+            23
+          ],
+          "default": 0
+        },
+        "objectId": {
+          "$id": "#root/planCostShares/objectId",
+          "title": "Objectid",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "1234vxc2324sdf-501"
+          ],
+          "pattern": "^.*$"
+        },
+        "objectType": {
+          "$id": "#root/planCostShares/objectType",
+          "title": "Objecttype",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "membercostshare"
+          ],
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "linkedPlanServices": {
+      "$id": "#root/linkedPlanServices",
+      "title": "Linkedplanservices",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/linkedPlanServices/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "linkedService",
+          "planserviceCostShares",
+          "_org",
+          "objectId",
+          "objectType"
+        ],
+        "properties": {
+          "linkedService": {
+            "$id": "#root/linkedPlanServices/items/linkedService",
+            "title": "Linkedservice",
+            "type": "object",
+            "required": [
+              "_org",
+              "objectId",
+              "objectType",
+              "name"
+            ],
+            "properties": {
+              "_org": {
+                "$id": "#root/linkedPlanServices/items/linkedService/_org",
+                "title": "_org",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "example.com"
+                ],
+                "pattern": "^.*$"
+              },
+              "objectId": {
+                "$id": "#root/linkedPlanServices/items/linkedService/objectId",
+                "title": "Objectid",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "1234520xvc30asdf-502"
+                ],
+                "pattern": "^.*$"
+              },
+              "objectType": {
+                "$id": "#root/linkedPlanServices/items/linkedService/objectType",
+                "title": "Objecttype",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "service"
+                ],
+                "pattern": "^.*$"
+              },
+              "name": {
+                "$id": "#root/linkedPlanServices/items/linkedService/name",
+                "title": "Name",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "Yearly physical"
+                ],
+                "pattern": "^.*$"
+              }
+            }
+          }
+        ,
+          "planserviceCostShares": {
+            "$id": "#root/linkedPlanServices/items/planserviceCostShares",
+            "title": "Planservicecostshares",
+            "type": "object",
+            "required": [
+              "deductible",
+              "_org",
+              "copay",
+              "objectId",
+              "objectType"
+            ],
+            "properties": {
+              "deductible": {
+                "$id": "#root/linkedPlanServices/items/planserviceCostShares/deductible",
+                "title": "Deductible",
+                "type": "integer",
+                "examples": [
+                  10
+                ],
+                "default": 0
+              },
+              "_org": {
+                "$id": "#root/linkedPlanServices/items/planserviceCostShares/_org",
+                "title": "_org",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "example.com"
+                ],
+                "pattern": "^.*$"
+              },
+              "copay": {
+                "$id": "#root/linkedPlanServices/items/planserviceCostShares/copay",
+                "title": "Copay",
+                "type": "integer",
+                "examples": [
+                  0
+                ],
+                "default": 0
+              },
+              "objectId": {
+                "$id": "#root/linkedPlanServices/items/planserviceCostShares/objectId",
+                "title": "Objectid",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "1234512xvc1314asdfs-503"
+                ],
+                "pattern": "^.*$"
+              },
+              "objectType": {
+                "$id": "#root/linkedPlanServices/items/planserviceCostShares/objectType",
+                "title": "Objecttype",
+                "type": "string",
+                "default": "",
+                "examples": [
+                  "membercostshare"
+                ],
+                "pattern": "^.*$"
+              }
+            }
+          }
+        ,
+          "_org": {
+            "$id": "#root/linkedPlanServices/items/_org",
+            "title": "_org",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "example.com"
+            ],
+            "pattern": "^.*$"
+          },
+          "objectId": {
+            "$id": "#root/linkedPlanServices/items/objectId",
+            "title": "Objectid",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "27283xvx9asdff-504"
+            ],
+            "pattern": "^.*$"
+          },
+          "objectType": {
+            "$id": "#root/linkedPlanServices/items/objectType",
+            "title": "Objecttype",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "planservice"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    },
+    "_org": {
+      "$id": "#root/_org",
+      "title": "_org",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "example.com"
+      ],
+      "pattern": "^.*$"
+    },
+    "objectId": {
+      "$id": "#root/objectId",
+      "title": "Objectid",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "12xvxc345ssdsds-508"
+      ],
+      "pattern": "^.*$"
+    },
+    "objectType": {
+      "$id": "#root/objectType",
+      "title": "Objecttype",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "plan"
+      ],
+      "pattern": "^.*$"
+    },
+    "planType": {
+      "$id": "#root/planType",
+      "title": "Plantype",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "inNetwork"
+      ],
+      "pattern": "^.*$"
+    },
+    "creationDate": {
+      "$id": "#root/creationDate",
+      "title": "Creationdate",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "12-12-2017"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}
